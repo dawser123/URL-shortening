@@ -17,7 +17,7 @@ const Shortener = ({ url, shrtlnk }) => {
             <p className="py-1 font-bold text-primaryColor">{shrtlnk}</p>
             <Button
               onClick={() => copyUrlHandler(shrtlnk)}
-              className={`w-full rounded-md m:max-w-[25%] ${copied ? 'bg-secondaryColor lg:hover:bg-opacity-[100%]':''}`}
+              className={`w-full rounded-md m:max-w-[25%] ${copied ? 'bg-secondaryColor hover:!bg-opacity-[100%]':''}`}
             >
               {copied ? "Copied!" : "Copy"}
             </Button>
