@@ -37,7 +37,12 @@ const Input = () => {
         },
         body: JSON.stringify({ url: orginalUrl }),
       })
-        .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`${response.status} server error`);
+        }
+        return response.json();
+      })
         .then((data) => {
           setShortenedLinks((prevState) => [...prevState, data]);
         })
