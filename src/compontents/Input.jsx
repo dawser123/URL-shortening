@@ -56,7 +56,7 @@ const Input = () => {
 
   return (
     <MaxWidthContainer>
-      <div className="relative -top-20 mx-auto m:mx-0 w-[90%] m:w-full">
+      <div id="input" className="relative -top-20 mx-auto m:mx-0 w-[90%] m:w-full">
         <div className=" relative mt-16 min-w-[225px] rounded-lg bg-veryDarkBlue  bg-inputImgMobile bg-cover bg-left-bottom bg-no-repeat p-10 m:mt-24 m:bg-inputImgDesktop ">
           <form
             onSubmit={submitHandler}

@@ -2,6 +2,11 @@ import illustration from "../assets/illustration-working.svg";
 import Button from "./UI/Button";
 
 const Hero = ({ children }) => {
+  const scrollToInputSection = () => {
+    const inputSection = document.getElementById("input");
+    if (inputSection) {
+      inputSection.scrollIntoView({behavior: "smooth" });
+    }}
   return (
     <div className="m:flex-row mt-16 flex w-full flex-col items-center ">
       <img
@@ -17,7 +22,7 @@ const Hero = ({ children }) => {
           Build your brand&apos;s recognition and get detailed insights on how
           your links are performing.
         </p>
-        <Button className="rounded-full px-6">Get Started</Button>
+        <Button onClick={scrollToInputSection}   className="rounded-full px-6">Get Started</Button>
       </div>
       {children}
     </div>
