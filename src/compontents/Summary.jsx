@@ -7,7 +7,7 @@ const Summary = ({ children }) => {
     <>
       <div className=" max-w-full  bg-zinc-200 pb-28">
       {children}
-        <h2 className="pt-40 text-center text-2xl font-bold">
+        <h2 className=" text-center text-2xl font-bold">
           Advanced Statistics
         </h2>
         <p className=" text-grayishViolet m:w-96 mx-auto  my-5 w-80 text-center">
