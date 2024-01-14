@@ -20,7 +20,6 @@ This is a solution to the [URL shortening API landing page](https://www.frontend
   - The `input` field is empty
 
  ### Links
-- Solution URL: [solution URL here](https://github.com/dawser123/URL-Shortly)
 - Live Site URL: [live site URL here](https://url-shortening-blush-two.vercel.app/)
  ### Built with
 - Tailwind
